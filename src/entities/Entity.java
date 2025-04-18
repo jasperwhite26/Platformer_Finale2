@@ -1,11 +1,11 @@
 package entities;
 
-import utilz.Constants.Game;
-
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.geom.Rectangle2D;
 
+import main.Game;
+import utilz.Constants;
 
 public abstract class Entity {
 
@@ -40,7 +40,7 @@ public abstract class Entity {
 	}
 
 	protected void initHitbox(int width, int height) {
-		hitbox = new Rectangle2D.Float(x, y, (int) (width * Game.SCALE), (int) (height * Game.SCALE));
+		hitbox = new Rectangle2D.Float(x, y, (int) (width * Constants.Game.SCALE), (int) (height * Constants.Game.SCALE));
 	}
 
 	public Rectangle2D.Float getHitbox() {

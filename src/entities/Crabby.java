@@ -22,7 +22,7 @@ public class Crabby extends Enemy {
     }
 
     private void initAttackBox() {
-        attackBox = new Rectangle2D.Float(x, y, (int)(82 * Constants.Game.SCALE), (int)(19 * Constants.Game.SCALE));
+        attackBox = new Rectangle2D.Float(x, y, (int) (82 * Constants.Game.SCALE), (int) (19 * Constants.Game.SCALE));
         attackBoxOffsetX = (int) (Constants.Game.SCALE * 30);
     }
 
@@ -38,12 +38,12 @@ public class Crabby extends Enemy {
     }
 
     private void updateBehavior(int[][] lvlData, Player player) {
-        if (firstUpdate) {
+        if (firstUpdate)
             firstUpdateCheck(lvlData);
-        }
-        if (inAir) {
+
+        if (inAir)
             updateInAir(lvlData);
-        } else {
+        else {
             switch (state) {
                 case IDLE:
                     newState(RUNNING);
@@ -54,6 +54,7 @@ public class Crabby extends Enemy {
                         if (isPlayerCloseForAttack(player))
                             newState(ATTACK);
                     }
+
                     move(lvlData);
                     break;
                 case ATTACK:
@@ -68,19 +69,17 @@ public class Crabby extends Enemy {
         }
     }
 
-        public int flipX () {
-            if (walkDir == RIGHT) {
-                return width;
-            } else {
-                return 0;
-            }
-        }
-
+    public int flipX() {
+        if (walkDir == RIGHT)
+            return width;
+        else
+            return 0;
+    }
 
     public int flipW() {
-        if (walkDir == RIGHT) {
+        if (walkDir == RIGHT)
             return -1;
-        } else {
+        else
             return 1;
-        }
-    }}
+    }
+}

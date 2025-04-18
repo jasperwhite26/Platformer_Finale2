@@ -4,19 +4,19 @@ import main.Game;
 
 public class Constants {
 
-	public static final float GRAVITY = 0.04f * Constants.Game.SCALE;
+	public static final float GRAVITY = 0.04f * Game.SCALE;
 	public static final int ANI_SPEED = 25;
 
 	public static class Projectiles{
 		public static final int CANNON_BALL_DEFAULT_WIDTH = 15;
 		public static final int CANNON_BALL_DEFAULT_HEIGHT = 15;
 
-		public static final int CANNON_BALL_WIDTH = (int)(Constants.Game.SCALE * CANNON_BALL_DEFAULT_WIDTH);
-		public static final int CANNON_BALL_HEIGHT = (int)(Constants.Game.SCALE * CANNON_BALL_DEFAULT_HEIGHT);
-		public static final float SPEED = 0.75f * Constants.Game.SCALE;
+		public static final int CANNON_BALL_WIDTH = (int)(Game.SCALE * CANNON_BALL_DEFAULT_WIDTH);
+		public static final int CANNON_BALL_HEIGHT = (int)(Game.SCALE * CANNON_BALL_DEFAULT_HEIGHT);
+		public static final float SPEED = 0.75f * Game.SCALE;
 	}
 
-	public static class Game{
+	public static class Game {
 		public final static int TILES_DEFAULT_SIZE = 32;
 		public final static float SCALE = 2f;
 		public final static int TILES_IN_WIDTH = 26;
@@ -41,23 +41,23 @@ public class Constants {
 
 		public static final int CONTAINER_WIDTH_DEFAULT = 40;
 		public static final int CONTAINER_HEIGHT_DEFAULT = 30;
-		public static final int CONTAINER_WIDTH = (int) (Constants.Game.SCALE * CONTAINER_WIDTH_DEFAULT);
-		public static final int CONTAINER_HEIGHT = (int) (Constants.Game.SCALE * CONTAINER_HEIGHT_DEFAULT);
+		public static final int CONTAINER_WIDTH = (int) (Game.SCALE * CONTAINER_WIDTH_DEFAULT);
+		public static final int CONTAINER_HEIGHT = (int) (Game.SCALE * CONTAINER_HEIGHT_DEFAULT);
 
 		public static final int POTION_WIDTH_DEFAULT = 12;
 		public static final int POTION_HEIGHT_DEFAULT = 16;
-		public static final int POTION_WIDTH = (int) (Constants.Game.SCALE * POTION_WIDTH_DEFAULT);
-		public static final int POTION_HEIGHT = (int) (Constants.Game.SCALE * POTION_HEIGHT_DEFAULT);
+		public static final int POTION_WIDTH = (int) (Game.SCALE * POTION_WIDTH_DEFAULT);
+		public static final int POTION_HEIGHT = (int) (Game.SCALE * POTION_HEIGHT_DEFAULT);
 
 		public static final int SPIKE_WIDTH_DEFAULT = 32;
 		public static final int SPIKE_HEIGHT_DEFAULT = 32;
-		public static final int SPIKE_WIDTH = (int) (Constants.Game.SCALE * SPIKE_WIDTH_DEFAULT);
-		public static final int SPIKE_HEIGHT = (int) (Constants.Game.SCALE * SPIKE_HEIGHT_DEFAULT);
+		public static final int SPIKE_WIDTH = (int) (Game.SCALE * SPIKE_WIDTH_DEFAULT);
+		public static final int SPIKE_HEIGHT = (int) (Game.SCALE * SPIKE_HEIGHT_DEFAULT);
 
 		public static final int CANNON_WIDTH_DEFAULT = 40;
 		public static final int CANNON_HEIGHT_DEFAULT = 26;
-		public static final int CANNON_WIDTH = (int) (CANNON_WIDTH_DEFAULT * Constants.Game.SCALE);
-		public static final int CANNON_HEIGHT = (int) (CANNON_HEIGHT_DEFAULT * Constants.Game.SCALE);
+		public static final int CANNON_WIDTH = (int) (CANNON_WIDTH_DEFAULT * Game.SCALE);
+		public static final int CANNON_HEIGHT = (int) (CANNON_HEIGHT_DEFAULT * Game.SCALE);
 
 		public static int GetSpriteAmount(int object_type) {
 			switch (object_type) {
@@ -84,11 +84,11 @@ public class Constants {
 		public static final int CRABBY_WIDTH_DEFAULT = 72;
 		public static final int CRABBY_HEIGHT_DEFAULT = 32;
 
-		public static final int CRABBY_WIDTH = (int) (CRABBY_WIDTH_DEFAULT * Constants.Game.SCALE);
-		public static final int CRABBY_HEIGHT = (int) (CRABBY_HEIGHT_DEFAULT * Constants.Game.SCALE);
+		public static final int CRABBY_WIDTH = (int) (CRABBY_WIDTH_DEFAULT * Game.SCALE);
+		public static final int CRABBY_HEIGHT = (int) (CRABBY_HEIGHT_DEFAULT * Game.SCALE);
 
-		public static final int CRABBY_DRAWOFFSET_X = (int) (26 * Constants.Game.SCALE);
-		public static final int CRABBY_DRAWOFFSET_Y = (int) (9 * Constants.Game.SCALE);
+		public static final int CRABBY_DRAWOFFSET_X = (int) (26 * Game.SCALE);
+		public static final int CRABBY_DRAWOFFSET_Y = (int) (9 * Game.SCALE);
 
 		public static int GetSpriteAmount(int enemy_type, int enemy_state) {
 
@@ -139,28 +139,28 @@ public class Constants {
 		public static final int SMALL_CLOUD_WIDTH_DEFAULT = 74;
 		public static final int SMALL_CLOUD_HEIGHT_DEFAULT = 24;
 
-		public static final int BIG_CLOUD_WIDTH = (int) (BIG_CLOUD_WIDTH_DEFAULT * Constants.Game.SCALE);
-		public static final int BIG_CLOUD_HEIGHT = (int) (BIG_CLOUD_HEIGHT_DEFAULT * Constants.Game.SCALE);
-		public static final int SMALL_CLOUD_WIDTH = (int) (SMALL_CLOUD_WIDTH_DEFAULT * Constants.Game.SCALE);
-		public static final int SMALL_CLOUD_HEIGHT = (int) (SMALL_CLOUD_HEIGHT_DEFAULT * Constants.Game.SCALE);
+		public static final int BIG_CLOUD_WIDTH = (int) (BIG_CLOUD_WIDTH_DEFAULT * Game.SCALE);
+		public static final int BIG_CLOUD_HEIGHT = (int) (BIG_CLOUD_HEIGHT_DEFAULT * Game.SCALE);
+		public static final int SMALL_CLOUD_WIDTH = (int) (SMALL_CLOUD_WIDTH_DEFAULT * Game.SCALE);
+		public static final int SMALL_CLOUD_HEIGHT = (int) (SMALL_CLOUD_HEIGHT_DEFAULT * Game.SCALE);
 	}
 
 	public static class UI {
 		public static class Buttons {
 			public static final int B_WIDTH_DEFAULT = 140;
 			public static final int B_HEIGHT_DEFAULT = 56;
-			public static final int B_WIDTH = (int) (B_WIDTH_DEFAULT * Constants.Game.SCALE);
-			public static final int B_HEIGHT = (int) (B_HEIGHT_DEFAULT * Constants.Game.SCALE);
+			public static final int B_WIDTH = (int) (B_WIDTH_DEFAULT * Game.SCALE);
+			public static final int B_HEIGHT = (int) (B_HEIGHT_DEFAULT * Game.SCALE);
 		}
 
 		public static class PauseButtons {
 			public static final int SOUND_SIZE_DEFAULT = 42;
-			public static final int SOUND_SIZE = (int) (SOUND_SIZE_DEFAULT * Constants.Game.SCALE);
+			public static final int SOUND_SIZE = (int) (SOUND_SIZE_DEFAULT * Game.SCALE);
 		}
 
 		public static class URMButtons {
 			public static final int URM_DEFAULT_SIZE = 56;
-			public static final int URM_SIZE = (int) (URM_DEFAULT_SIZE * Constants.Game.SCALE);
+			public static final int URM_SIZE = (int) (URM_DEFAULT_SIZE * Game.SCALE);
 
 		}
 
@@ -169,9 +169,9 @@ public class Constants {
 			public static final int VOLUME_DEFAULT_HEIGHT = 44;
 			public static final int SLIDER_DEFAULT_WIDTH = 215;
 
-			public static final int VOLUME_WIDTH = (int) (VOLUME_DEFAULT_WIDTH * Constants.Game.SCALE);
-			public static final int VOLUME_HEIGHT = (int) (VOLUME_DEFAULT_HEIGHT * Constants.Game.SCALE);
-			public static final int SLIDER_WIDTH = (int) (SLIDER_DEFAULT_WIDTH * Constants.Game.SCALE);
+			public static final int VOLUME_WIDTH = (int) (VOLUME_DEFAULT_WIDTH * Game.SCALE);
+			public static final int VOLUME_HEIGHT = (int) (VOLUME_DEFAULT_HEIGHT * Game.SCALE);
+			public static final int SLIDER_WIDTH = (int) (SLIDER_DEFAULT_WIDTH * Game.SCALE);
 		}
 	}
 
